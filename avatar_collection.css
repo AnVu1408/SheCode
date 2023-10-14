@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>left banner</title>
-    <style>
-        body {
+        {
             margin: 0;
             padding: 0;
             background-color: #f0f0f0;
@@ -58,33 +53,4 @@
             height: 500px;
             overflow: auto; /* add scroll bar*/
         }
-    </style>
-</head>
-<body>
-    <div class="avatar-container">
-        <div class="avatar"> </div>
-    </div>
-   
-    <div class="button-container">
-        <button class="your-collection-button" id="toggleButton">your collection</button>
-        <div class="list" id="list">
-            <ul>
-               
-            </ul>
-        </div>
-    </div>
-
-    <script>
-        const toggleButton = document.getElementById('toggleButton');
-        const list = document.getElementById('list');
-
-        toggleButton.addEventListener('click', () => {
-            if (list.style.display === 'none' || list.style.display === '') {
-                list.style.display = 'block';
-            } else {
-                list.style.display = 'none';
-            }
-        });
-    </script>
-</body>
-</html>
+ 
