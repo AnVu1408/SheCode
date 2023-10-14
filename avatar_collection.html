@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>left banner</title>
+    
+</head>
+<body>
+    <div class="avatar-container">
+        <div class="avatar"> </div>
+    </div>
+   
+    <div class="button-container">
+        <button class="your-collection-button" id="toggleButton">your collection</button>
+        <div class="list" id="list">
+            <ul>
+               
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const list = document.getElementById('list');
+
+        toggleButton.addEventListener('click', () => {
+            if (list.style.display === 'none' || list.style.display === '') {
+                list.style.display = 'block';
+            } else {
+                list.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
 
