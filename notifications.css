@@ -1,0 +1,201 @@
+html, body {
+    margin: 5px;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 1440px;
+    background-color: #fff;
+}
+
+.root {
+    box-sizing: border-box;
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* left banner */
+.left-banner {
+    box-sizing: border-box;
+    background-color: #fff;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    padding: 20px;
+    border-right: 1px solid #000;
+    display: flex;
+    min-width: 300px;
+    flex-direction: column; 
+    
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.search_bar {
+    display: flex;
+    flex: 1; /* Allow search bar to grow and take available space */
+    margin: 5px 10px; /* Add some margin for spacing */
+    max-width: 50%;
+    padding: 30px;
+    height: 50px;
+    align-items: center;
+
+}
+.search_bar input {
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 3px solid #000;
+    padding: 5px;
+}
+/* BUTTON */
+.button {
+    flex: 0 0 auto;/* Prevent the buttons from growing */
+    display: flex;
+    gap: 10px;
+    box-sizing: border-box;
+    align-items: center;
+    border: 5px #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 55px;
+    max-width: 40%;
+}
+
+/* LOGO */
+.header-logo{
+    flex: 0 0 50px; /* Fixed width for the logo */
+    top: 5%;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    position: sticky;
+    top: 20px;
+}
+
+.logo{
+    width: 260px;
+    height: 100px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+
+.elements_container {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    gap: 10px;
+    position: sticky;
+    top: 130px;
+}
+
+.css1 {
+    flex: 1;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#ndHome, #ndDiscovery, #ndForum, #ndNotification {
+    cursor: pointer;
+    font-size: x-large;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 7px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#ndHome:hover, #ndDiscovery:hover, #ndForum:hover, #ndNotification:hover {
+    background-color: #D9D9D9;
+    border-radius: 5px;
+}
+
+.svg {
+    cursor: pointer;
+}
+
+.notification-sidebar {
+
+    transform: translateX(0);
+    /* Điều chỉnh chiều rộng và các thuộc tính khác của sidebar ở đây */
+    transition: transform 0.3s ease-in-out; /* Hiệu ứng transition khi sidebar xuất hiện */
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+#showNotifications {
+    cursor: pointer;
+}
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.notification-item {
+    display: flex;
+    align-items: center;
+    font-family: "Merriweather Sans", sans-serif; /* Sử dụng font-family Merriweather Sans hoặc font-family bạn muốn */
+    font-size: 15px; /* Kích thước font 20px */
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+    width: 40px; /* Điều chỉnh kích thước avatar tùy ý */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.user-name {
+    font-weight: bold;
+}
+
+.notification-content {
+    flex: 1;
+}
